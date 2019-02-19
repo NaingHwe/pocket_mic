@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PocketMic</string>
+    <string name="title_activity_mic">MicActivity</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="info_msg">Connect any Speaker!\nAnd then Speech/Sing Enjoy :)</string>
+</resources>

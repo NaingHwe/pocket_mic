@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MicActivity">
+
+    <TextView android:id="@+id/app_version" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_margin="5dp"
+        android:text="App version" />
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:scaleType="fitCenter" android:src="@drawable/mic" />
+    <ImageView android:id="@+id/speakerOnOff" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" android:background="@drawable/greycircle"
+        android:src="@android:drawable/ic_lock_silent_mode_off" android:visibility="gone" />
+
+    <ImageView android:id="@+id/info" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" android:layout_margin="5dp"
+        android:background="@drawable/greycircle"
+        android:src="@android:drawable/ic_menu_info_details" />
+
+    <Button android:id="@+id/modeBtn" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginTop="24dp"
+        android:onClick="modeChange" android:text="Call Mode" android:visibility="gone" />
+
+    <Button android:id="@+id/playBtn" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBaseline="@+id/modeBtn"
+        android:layout_alignBottom="@+id/modeBtn" android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/modeBtn" android:onClick="play" android:text="Pause"
+        android:visibility="gone" />
+
+    <LinearLayout android:id="@+id/linearlayout1" android:layout_width="100dp"
+        android:layout_height="wrap_content" android:layout_centerInParent="true"
+        android:orientation="horizontal">
+        <LinearLayout android:id="@+id/linearlayout2" android:layout_width="100dp"
+            android:layout_height="wrap_content" android:orientation="vertical">
+            <ImageView android:id="@+id/off" android:layout_width="40dp"
+                android:layout_height="40dp" android:layout_gravity="center"
+                android:background="@drawable/redcircle" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="center" android:background="@android:color/darker_gray"
+                android:orientation="vertical">
+                <ImageView android:id="@+id/off_btn" android:layout_width="50dp"
+                    android:layout_height="90dp" android:background="@drawable/rectengular" />
+                <ImageView android:id="@+id/on_btn" android:layout_width="50dp"
+                    android:layout_height="90dp" android:background="@drawable/rectengular"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <ImageView android:id="@+id/on" android:layout_width="40dp" android:layout_height="40dp"
+                android:layout_gravity="center" android:background="@drawable/greycircle" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

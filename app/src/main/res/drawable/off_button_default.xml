@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Outside border/shadow -->
+    <item>
+        <shape android:shape="oval">
+            <size
+                android:width="@dimen/button_size"
+                android:height="@dimen/button_size" />
+            <gradient
+                android:angle="90"
+                android:endColor="#ffffff"
+                android:startColor="#ffffff" />
+        </shape>
+    </item>
+
+    <!-- Inset -->
+    <item
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp">
+        <shape android:shape="oval">
+            <gradient
+                android:angle="90"
+                android:endColor="#c9c9c9"
+                android:startColor="#dcdcdc" />
+        </shape>
+    </item>
+
+    <!-- Inside border/shadow -->
+    <item
+        android:bottom="15dp"
+        android:left="15dp"
+        android:right="15dp"
+        android:top="15dp">
+        <shape android:shape="oval">
+            <gradient
+                android:angle="90"
+                android:endColor="#cbcbcb"
+                android:startColor="#8c8c8c" />
+        </shape>
+    </item>
+
+    <!-- Main button -->
+    <item
+        android:bottom="5dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:top="5dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/md_red_500" />
+        </shape>
+    </item>
+
+</layer-list>
